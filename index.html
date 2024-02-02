@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>DecoSpace</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="container__conteudo">
+                <div class="container__informacoes">
+                    <div class="container__texto">
+                        <h1>DecoSpace</h1>
+                    </div>
+                    <input type="text" placeholder="Digite uma mensagem" class="container__input">
+                    <div class="container__botoes">
+                        <button onclick="encriptaTexto()" class="container__botao">Encriptar</button>
+                        <button onclick="desencriptaTexto()" class="container__botao">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="container__encriptacao">
+            <div class="container__label__encriptacao">
+                <label class="label__encriptacao" id="idLabelEncriptado">Sua encriptação aqui</label>      
+                <div class="notificacaoCopiado" id="idNotificacaoCopiado">
+                    <h4><strong>Copiado!</strong></h4>
+                </div>                
+            </div>                   
+            <div class="container__botao__copiar">
+                <button class="copiar" id="idCopia" onclick="copiaTextoAreaDeTrabalho()">Copiar</button>
+            </div> 
+            <div class="notificacaoAlertaErro" id="idnotificacaoAlertaErro">
+                <h3></h3>
+                <p></p>
+            </div>   
+        </div>   
+        <script src="app.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Sometype+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: url("img/FundoEspaco.jpg");
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+body::before {
+    background-image: url("img/estrelas.webp");
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    opacity: 0.2;
+    height: 715px;
+    top: 0px;
+}
+
+.container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+
+.container__conteudo {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.container__informacoes {
+    padding: 2rem;
+}
+
+.container__botao {
+    border-radius: 16px;
+    background: #303668;
+    padding: 16px 24px 16px 24px;
+    width: 25%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin-top: 2rem;
+}
+
+.container__texto {
+    margin: 16px 0 16px 0;
+}
+
+
+.container__input {
+    width: 700px;
+    height: 72px;
+    border-radius: 16px;
+    background-color: #ededed;
+    color: #4f5359; 
+    border: none;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Sometype Mono', monospace;
+}
+
+.container__botoes {
+    display: flex;
+    gap: 1em;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 72px;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 150vh;
+}
+
+p,h3,
+button {
+    font-family: 'Sometype Mono', monospace;
+    font-weight: 600;
+}
+
+.texto__paragrafo {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.container__encriptacao{
+    height: 363px;
+
+}
+
+.container__label__encriptacao{
+    height: 75px;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: right;
+    margin-top: 300px;
+
+}
+
+.label__encriptacao{    
+    width: 600px;
+    height: 540px;
+    border-radius: 16px;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Sometype Mono', monospace;
+    background-color: #ededed;
+    color: #4f5359; 
+    margin-right: 50px; 
+    padding: 2rem;
+}
+
+.container__botao__copiar{
+    position: absolute;       
+}
+
+.copiar{
+    border-radius: 16px;
+    background: #6c6b6b;
+    padding: 16px 24px 16px 24px;
+    width: 600px;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin-top: 32px;
+}
+
+.notificacaoCopiado {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    background-color: #499f4b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Sometype Mono', monospace;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 35px;
+}
+
+.notificacaoAlertaErro {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border-radius: 13px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    opacity: 0; 
+    transition: opacity 0.5s, top 0.5s;
+}
